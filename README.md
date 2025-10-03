@@ -1,11 +1,11 @@
-# Portfolio
+# Portfolio- In development
 Personal Website
 # KhalilAK Portfolio 🌐
 
 Welcome to my personal portfolio! This website highlights who I am, my projects, skills, and resume.
 
 ## 🚀 Live Demo
-Check it out here (right-click → Open in new tab): [Live Demo](https://portfolio-fm0ms6i2p-khalilaks-projects.vercel.app/)
+Check it out here (right-click → Open in new tab): [Live Demo](https://portfolio-khalilaks-projects.vercel.app/)
 
 ## 🛠️ Built With
 - **Frontend:** HTML, CSS, JavaScript
