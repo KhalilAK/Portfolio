@@ -1,0 +1,324 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color:aquamarine;
+    overflow: hidden;
+    height: 100vh;
+}
+.main-container{
+    display: flex;
+    overflow-y: auto;
+    height: 90vh
+}
+.ucf-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.sub-title{
+    color:white
+}
+
+:root{
+    --text-color: rgb(199, 199, 199);
+    --title-color: white;
+    --primary-color: #0d243c;
+    --secondary-color: #031234;
+}
+
+
+/*##############
+PERSONAL LINKS
+#############*/
+.personal-link-container img{
+    filter:invert(1) brightness(5);
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+}
+.personal-link-container{
+    margin-right: 2vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    flex-shrink: 0;
+}
+.links{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 0;
+    margin-bottom: 2vh;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.links-footer{
+    display: flex;
+    bottom: 0;
+    margin-bottom: 2vh;
+}
+
+.personal-link-container-footer{
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.personal-link-container-footer img{
+    display: inline-block;
+    filter:invert(1) brightness(5);
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+}
+.personal-link-container-footer a, .personal-link-container a{
+    position: relative;
+    width: fit-content;
+    margin: 20px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    right: -75%;
+    bottom: -80%;
+    background-color: rgb(56, 56, 56);
+    padding: 2px;
+    color: white;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 1px solid white;
+    z-index: 100;
+}
+
+a:hover .tooltip{
+    visibility: visible;
+}
+
+
+img:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #80002B;
+}
+
+/*##############
+INTRO CONTAINER
+#############*/
+.container{
+    margin-left: 100px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.intro-container{
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 300px;
+}
+.small-title{
+}
+.big-title{
+    color:var(--title-color)
+}
+.big-title h1{
+    font-size: 40px;
+}
+.text{
+    color: var(--text-color);
+}
+.intro-text p{
+    width: 400px;
+}
+.contact-container{
+    margin-top: 50px;
+}
+/*##############
+NAV CONTAINER
+#############*/
+
+.nav-bar-container{
+    transition: transform 0.4s ease-in-out;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    text-decoration: none;
+}
+.nav-bar-container p{
+    font-size: 15px;
+    margin-right: 1em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.nav-bar-container p:hover{
+    color:aquamarine;
+}
+.nav-bar-container a.active{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 3px;
+}
+/*##############
+LOADING LOGO
+#############*/
+.loading-wrapper{
+    position: absolute;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    z-index: 10;
+}
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid aquamarine;
+    transition: opacity, backgroundColor 0.5s ease;
+    animation: fill 1s linear forwards
+}
+
+.loading-wrapper.finished{ /*3.5s*/
+    animation: opacityDim 3.5s forwards;
+    pointer-events: none;
+}
+.loader.finished{
+    animation: align 1s linear forwards;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.loader.finished:hover{
+    box-shadow: 5px 2px 4px aquamarine ;
+}
+/*##############
+ABOUT ME
+#############*/
+.about-container{
+    height: 200vh;
+    padding-bottom: 200px
+}
+.about-text{
+    width: 80%;
+}
+
+.technologies{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    width: 200px;
+}
+.compiler-link{
+    text-decoration: none;
+    color: aquamarine
+}
+
+/*##############
+PROJECT/EXPERIENCE CONTAINER
+#############*/
+.project-container{
+    height: fit-content;
+    padding-bottom: 20vh;
+}
+.project{
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px black;
+    margin-bottom: 50px;
+}
+
+.detail{
+    display: flex;
+    color: var(--text-color);
+    gap: 1em;
+}
+
+.project-url{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid aquamarine;
+    padding: 10px;
+    font-weight: bold;
+    color:aquamarine;
+    font-size: larger;
+}
+
+@keyframes opacityDim{
+    from{background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));}
+    to{background: transparent;}
+}
+@keyframes align{
+    from{top: 50%; left: 50%; transform: translate(-50%);}
+    to{top: 20px; left: 0%; transform: translate(50%);}
+}
+@keyframes fill {
+    from { opacity: 0; border-color: #1e2052;}
+    to   { border: 100%; border-color: aquamarine;}
+}
+.c{
+    filter: sepia(1) hue-rotate(180deg) saturate(6);
+}
+@media (max-width: 800px){
+    .container{
+        margin-left: 0;
+    }
+    .personal-link-container{
+        display: none;
+    }
+    .main-container{
+        margin: 1em;
+    }
+    .personal-link-container-footer{
+        display: flex;
+    }
+    .intro-text p{
+        width: 300px;
+    }
+}
