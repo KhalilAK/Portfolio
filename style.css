@@ -66,7 +66,7 @@ footer{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 30vh;
 }
 .links-footer{
     display: flex;
@@ -261,7 +261,6 @@ PROJECT/EXPERIENCE CONTAINER
 #############*/
 .project-container{
     height: fit-content;
-    padding-bottom: 20vh;
 }
 .project{
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
