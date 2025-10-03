@@ -4,7 +4,7 @@ body{
     padding: 0;
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
     color:aquamarine;
-
+    height: 120vh;
     overflow: hidden;
 }
 .main-container{
