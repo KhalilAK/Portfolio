@@ -29,10 +29,6 @@ const scrollThreshold = 0;
 mainContainer.addEventListener('scroll', () => {
     console.log(mainContainer.scrollTop);
     let scrollTop = mainContainer.scrollTop;
-    window.scrollTo({
-        top: scrollTop,
-        behavior: 'smooth',
-    })
 
     lastScrollTop = scrollTop;
 })
