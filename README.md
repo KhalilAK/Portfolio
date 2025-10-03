@@ -5,7 +5,7 @@ Personal Website
 Welcome to my personal portfolio! This website highlights who I am, my projects, skills, and resume.
 
 ## 🚀 Live Demo
-Check it out here: [https://portfolio-fm0ms6i2p-khalilaks-projects.vercel.app/](https://portfolio-fm0ms6i2p-khalilaks-projects.vercel.app/)
+<a href="https://portfolio-fm0ms6i2p-khalilaks-projects.vercel.app/" target="_blank">Check it out here</a>
 
 ## 🛠️ Built With
 - **Frontend:** HTML, CSS, JavaScript
