@@ -5,6 +5,7 @@ body{
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
     color:aquamarine;
     height: 100vh;
+    overflow: hidden;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
