@@ -52,6 +52,8 @@ PERSONAL LINKS
     min-height: 100vh;
     flex-shrink: 0;
 }
+
+
 .links{
     display: flex;
     position: fixed;
@@ -61,13 +63,15 @@ PERSONAL LINKS
 }
 
 footer{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    padding-bottom: 30vh;
+    width: 80%;
+    padding-bottom: 20vh;
 }
+
 .links-footer{
     display: flex;
     bottom: 0;
@@ -273,7 +277,6 @@ PROJECT/EXPERIENCE CONTAINER
     margin: 10px;
     flex-direction: column;
     box-shadow: 2px 2px 8px black;
-    margin-bottom: 50px;
 }
 
 .detail{
@@ -323,5 +326,9 @@ PROJECT/EXPERIENCE CONTAINER
     }
     .intro-text p{
         width: 300px;
+    }
+
+    footer{
+        width: 100%;
     }
 }

@@ -1,5 +1,5 @@
-const githubLink = document.querySelector('.githubLink');
-const linkedinLink = document.querySelector('.linkedinLink');
+const githubLink = document.querySelectorAll('.githubLink');
+const linkedinLink = document.querySelectorAll('.linkedinLink');
 const header = document.querySelector(".header");
 
 const navContainer = document.querySelector('.nav-bar-container');
@@ -15,12 +15,17 @@ const aboutSection = document.querySelector('.about-container');
 const projectSection = document.querySelector('.project-container');
 
 
-const [home, about, projects, resume] = [navLinks[0], navLinks[1], navLinks[2], navLinks[2]];
+const [home, about, projects, resume] = [navLinks[0], navLinks[1], navLinks[2], navLinks[3]];
 
 
+githubLink.forEach(link => {
+    link.addEventListener('click', openGitHub);
+})
 
-githubLink.addEventListener('click', openGitHub);
-linkedinLink.addEventListener('click', openLinkedin);
+linkedinLink.forEach(link => {
+    link.addEventListener('click', openLinkedin);
+})
+
 
 let lastScrollTop = 0;
 const scrollThreshold = 0;
@@ -57,8 +62,8 @@ loader.addEventListener('animationend', (e) => {
         loader.classList.add('finished');
         loadWrapper.classList.add('finished');
     }
-})
-
+});
+resume.addEventListener('click', openResume);
 
 function goTop(){
     mainContainer.scrollTo({
@@ -68,7 +73,7 @@ function goTop(){
 }
 
 function openResume(){
-    window.open('./Resume0-2.pdf');
+    window.open('./Resume/ResumeAmeer_0.pdf');
 }
 
 function openGitHub(){
@@ -76,5 +81,5 @@ function openGitHub(){
 }
 
 function openLinkedin(){
-    //window.open("https://www.linkedin.com/in/ameer-khalil-5b4b6525b/");
+    window.open("https://www.linkedin.com/in/ameer-khalil-5b4b6525b/");
 }
