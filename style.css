@@ -23,7 +23,11 @@ body{
 }
 
 .sub-title{
-    color:white
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 :root{
