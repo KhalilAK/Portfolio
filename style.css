@@ -231,15 +231,15 @@ LOADING LOGO
     font-weight: bold;
     border: 2px solid aquamarine;
     transition: opacity, backgroundColor 0.5s ease;
-    animation: fill 1s linear forwards
+    animation: fill 0.75s linear forwards
 }
 
 .loading-wrapper.finished{ /*3.5s*/
-    animation: opacityDim 3.5s forwards;
+    animation: opacityDim 2.5s forwards;
     pointer-events: none;
 }
 .loader.finished{
-    animation: align 1s linear forwards;
+    animation: align 0.75s linear forwards;
     z-index: 10;
     pointer-events: auto;
     cursor: pointer;
