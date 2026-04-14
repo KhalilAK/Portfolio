@@ -207,6 +207,10 @@ nav{
     text-decoration-thickness: 3px;
 }
 
+.resumeLink{
+    text-decoration: none;
+}
+
 .resume{
     text-decoration: none;
     color: white;
