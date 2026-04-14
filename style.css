@@ -136,6 +136,18 @@ img:hover{
     box-shadow: 2px 2px 5px #80002B;
 }
 
+.resumeLink{
+    text-decoration: none;
+}
+
+.resume{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
 /*##############
 INTRO CONTAINER
 #############*/
@@ -205,17 +217,6 @@ nav{
     text-underline-offset: 4px;
     text-decoration-color: aquamarine;
     text-decoration-thickness: 3px;
-}
-
-.resumeLink{
-    text-decoration: none;
-}
-
-.resume{
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    padding-right: 10px;
 }
 
 
