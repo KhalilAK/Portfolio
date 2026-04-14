@@ -72,7 +72,7 @@ function goTop(){
 }
 
 function openResume(){
-    window.open('./Resume/Ameer_Res0.pdf');
+    window.open('./Resume/Ameer_Res1.pdf');
 }
 
 function openGitHub(){
