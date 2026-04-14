@@ -206,6 +206,15 @@ nav{
     text-decoration-color: aquamarine;
     text-decoration-thickness: 3px;
 }
+
+.resume{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
 /*##############
 LOADING LOGO
 #############*/
